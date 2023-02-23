@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Project</title>
+  </head>
+  <body>
+    <!-- Navbar : Home - About - Contact-->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Home : -->
+    <section id="home">
+      <h2>Home</h2>
+      <!--  You have to make a div, p, img, etc. -->
+      <div>
+        <p class="underline">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          perferendis dignissimos laudantium similique maxime consectetur? Natus
+          consequatur hic velit esse voluptas sunt asperiores error,
+          perspiciatis pariatur, excepturi deleniti delectus illum! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Repudiandae ipsa maiores
+          excepturi deserunt dolorem hic deleniti aperiam, maxime aspernatur?
+          Eaque, voluptatibus eligendi! Earum, voluptas ex? Iste deleniti
+          obcaecati explicabo temporibus.
+        </p>
+        <img
+          src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- About : -->
+    <section id="about">
+      <h2>About</h2>
+      <!-- Create an ordered list that contains your information (name, last name, academic background, etc.). the about section should also contain a video link. -->
+      <ol>
+        <li>First Name: GoMyCode</li>
+        <li>Last Name: Student</li>
+        <li>Academic Background: Engineering Bachelor Degree</li>
+      </ol>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/W917j9vz_LE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <!-- Contact : -->
+    <section id="contact">
+      <h2>Contact:</h2>
+      <form>
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" placeholder="Your name" id="name" />
+        </div>
+        <div>
+          <label for="date-of-birth">Date of Birth: </label>
+          <input
+            type="date"
+            placeholder="Enter your date of Birth"
+            id="date-of-birth"
+          />
+        </div>
+        <div>
+          <label type="text">Address: </label>
+          <input type="address" placeholder="Your address" />
+        </div>
+        <div>
+          <label for="Email">Email: </label>
+          <input type="email" placeholder="Your email @xxx" id="email" />
+        </div>
+
+        <div>
+          <label for="textarea">Comment: </label>
+          <textarea
+            id="textarea"
+            placeholder="Write a short comment"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
