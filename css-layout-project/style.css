@@ -1,0 +1,206 @@
+/*Valiables*/
+:root {
+  --mint-green: #00bfa5;
+  --blue: #4f8fe2;
+  --navy: #313c47;
+  --text-grey: #747474;
+  --light-grey: #ababab;
+}
+/*restes*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+section,
+main {
+  margin: 0 auto;
+  padding: 100px;
+}
+/*Header Styling*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.header-nav > ul {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 100%;
+}
+
+.active-nav-item {
+  color: var(--mint-green);
+}
+li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--light-grey);
+}
+
+li:hover {
+  color: var(--mint-green);
+}
+.header-logo {
+  display: block;
+  width: 23%;
+}
+
+/*Main Section Styling*/
+main {
+  padding-top: 50px;
+}
+.header-icon {
+  width: 30px;
+  display: block;
+  margin: 20px auto;
+}
+
+.main-header {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: var(--mint-green);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-description {
+  display: flex;
+  line-height: 2rem;
+  color: var(--text-grey);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/*Service cards styles*/
+
+.services {
+  display: flex;
+  color: white;
+  gap: 5%;
+  justify-content: center;
+  padding-top: 40px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.service-card {
+  background-color: var(--mint-green);
+  color: white;
+  border-radius: 10px;
+  width: 30%;
+  min-height: 350px;
+  padding: 3%;
+}
+.navy {
+  background-color: var(--navy);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+.service-card img {
+  width: 25px;
+}
+.service-card * {
+  padding-top: 10px;
+}
+.service-header {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  text-transform: none;
+}
+
+.service-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Work Sans", sans-serif;
+}
+.service-cta {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.partnerships {
+  display: grid;
+  padding-top: 40px;
+  grid-template-columns: 1fr 2fr;
+}
+.partnerships-header {
+  color: var(--mint-green);
+  font-weight: 500;
+  width: 50%;
+  font-size: 1.66rem;
+  font-family: "Work Sans", sans-serif;
+}
+.partnerships-logo {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.partnerships-item {
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%)
+    contrast(0);
+  opacity: 50%;
+}
+
+.analytics {
+  background-color: #c7eee9;
+  display: flex;
+  justify-content: space-between;
+  max-height: 550px;
+}
+
+.analytics-headline {
+  color: var(--mint-green);
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  font-size: 2.125rem;
+}
+
+.analytics-description {
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--text-grey);
+  line-height: 1.7;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.analytics-icon {
+  overflow: hidden;
+}
+.analytics-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.analytics-card {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  height: 200px;
+}
+
+.col-1 {
+  margin-top: -10px;
+}
+
+.col-2 {
+  margin-top: -20px;
+}
