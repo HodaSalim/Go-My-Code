@@ -1,0 +1,27 @@
+FUNCTION uniqueCalc (arr1, arr2) : INTEGER
+VAR
+    i: INTEGER
+    newArr: ARRAY_OF type[INTEGER];
+    total: INTEGER
+
+BEGIN
+    FOR i FROM 0 TO arr1.length-1 STEP 1  DO
+        FOR i FROM 0 TO arr2.length-1 STEP 1  DO
+            IF (arr1[i] == arr2[j]) THEN
+                delete arr1[i]     
+            END_IF
+        END_FOR
+    END_FOR
+
+    newArr = arr1+arr2;
+
+    FOR i FROM 0 TO newArr.length-1 STEP 1  DO
+       total = total+newArr[i]
+    END_FOR
+
+    Return total
+END
+
+
+
+
